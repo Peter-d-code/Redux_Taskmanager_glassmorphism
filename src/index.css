@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.card{
+  /* From https://css.glass */
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background-color: rgba(3, 0, 25, 0.66);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+width: 90%;
+display: grid;
+grid-template-columns: 25% 72.5%;
+grid-template-rows: 100%;
+align-items: center;
+height: 95%;
+grid-template-areas: 
+"sidebar Card_container";
+grid-column-gap: 2.5%;
+grid-row-gap: 2.5%;
+}
+
+.card_peice {
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+grid-area: sidebar;
+width: 100%;
+height: 100%;
+/* margin-left: 1.6%; */
+border-radius: 10px;
+}
+
+.Taskmanager{
+grid-area: Card_container;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  /* margin-left: 1.6%; */
+  display: flex;
+  align-items: center;
+}
+
+.task_container{
+width: 35%;
+height: 95%;
+backdrop-filter: blur(20px) saturate(280%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(195, 150, 196, 0.1);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+margin-left: 2%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+:focus { outline: none; }
+
